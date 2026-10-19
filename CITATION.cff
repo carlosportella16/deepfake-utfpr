@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "Se usar este projeto, cite-o com os dados abaixo."
+title: "Detector de voz deepfake em PT-BR com CNN"
+abstract: "Ensemble de CNNs residuais sobre espectrogramas log-mel que classifica áudios em português como REAL, FALSO ou INCONCLUSIVO, com robustez a codecs e ao reenvio pelo WhatsApp."
+type: software
+license: MIT
+repository-code: "https://github.com/carlosportella16/deepfake-utfpr"
+date-released: 2026-10-18
+keywords:
+  - deepfake
+  - detecção de voz sintética
+  - CNN
+  - deep learning
+  - pt-br
+authors:
+  - given-names: "Carlos Eduardo Rosa"
+    family-names: "Portella"
+    affiliation: "Universidade Tecnológica Federal do Paraná"
+  - given-names: "Felipe Pereira da"
+    family-names: "Silva"
+    affiliation: "Universidade Tecnológica Federal do Paraná"
