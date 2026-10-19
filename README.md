@@ -1,5 +1,10 @@
 # Detector de voz deepfake em PT-BR com CNN
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1HmQv9uw1JC9kW3rhcQowu-Fl1CJYyXn0)
+![Python 3.12](https://img.shields.io/badge/python-3.12-blue)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-Keras-orange)
+[![Licença MIT](https://img.shields.io/badge/licen%C3%A7a-MIT-green)](LICENSE)
+
 Rede neural convolucional (Keras/TensorFlow) que recebe **qualquer arquivo de áudio** (mp3, wav, ogg/opus do WhatsApp, m4a, mpeg…) e diz se a voz é **REAL**, **FALSA** (sintética: ElevenLabs, TTS em geral) ou **INCONCLUSIVA**.
 
 Projeto final da disciplina de Aprendizado Profundo (*Deep Learning*) da UTFPR, Campus Curitiba, 2026.
