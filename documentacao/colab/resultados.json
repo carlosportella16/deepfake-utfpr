@@ -1,0 +1,134 @@
+{
+  "config": {
+    "sr": 16000,
+    "duracao_s": 3,
+    "passo_janela_s": 1.5,
+    "hop": 160,
+    "n_mels": 128,
+    "n_fft": 1024,
+    "n_treino": 8000,
+    "ativacao": "relu",
+    "otimizador": "adam",
+    "p_codec": 0.7,
+    "p_degradar": 0.5,
+    "p_whatsapp": 0.25,
+    "n_versoes_treino": 3,
+    "limiar_operacao": 0.57275390625,
+    "criterio_limiar": "eer_validacao",
+    "margem_incerta": 0.05,
+    "n_modelos_ensemble": 2,
+    "modelos": [
+      "modelo_cnn_final_s0.keras",
+      "modelo_cnn_final_s1.keras"
+    ],
+    "precisao": "mixed_float16",
+    "batch_size": 128,
+    "lr_pico": 0.002121320343559643
+  },
+  "comparacao": [],
+  "resultados": {
+    "Teste limpo": {
+      "acuracia": 0.9825,
+      "precisao_fake": 0.9898477157360406,
+      "recall_fake": 0.975,
+      "recall_real": 0.99,
+      "f1_macro": 0.9824990155696258,
+      "auc": 0.9982000000000001,
+      "eer": 0.01749999999999998,
+      "limiar_eer": 0.392578125
+    },
+    "Teste degradado (canal)": {
+      "acuracia": 0.935,
+      "precisao_fake": 0.9484536082474226,
+      "recall_fake": 0.92,
+      "recall_real": 0.95,
+      "f1_macro": 0.9349853717086345,
+      "auc": 0.9867218750000001,
+      "eer": 0.06499999999999997,
+      "limiar_eer": 0.43798828125
+    },
+    "Generalização (TTS nunca vistos)": {
+      "acuracia": 0.975,
+      "precisao_fake": 1.0,
+      "recall_fake": 0.95,
+      "recall_real": 1.0,
+      "f1_macro": 0.9749843652282677,
+      "auc": 0.997325,
+      "eer": 0.012500000000000004,
+      "limiar_eer": 0.1865234375
+    },
+    "Generalização degradada": {
+      "acuracia": 0.92,
+      "precisao_fake": 0.9516129032258065,
+      "recall_fake": 0.885,
+      "recall_real": 0.955,
+      "f1_macro": 0.9199018798027584,
+      "auc": 0.9769375,
+      "eer": 0.07499999999999998,
+      "limiar_eer": 0.347900390625
+    },
+    "ensemble_eer_por_modelo": {
+      "modelo 0": {
+        "Teste limpo": 2.13,
+        "Teste degradado": 7.5,
+        "Generalização": 2.5
+      },
+      "modelo 1": {
+        "Teste limpo": 1.5,
+        "Teste degradado": 6.75,
+        "Generalização": 1.25
+      },
+      "ENSEMBLE": {
+        "Teste limpo": 1.75,
+        "Teste degradado": 6.5,
+        "Generalização": 1.25
+      }
+    },
+    "In-the-Wild (internet)": {
+      "acuracia": 0.6812169312169312,
+      "precisao_fake": 0.7658730158730159,
+      "recall_fake": 0.5146666666666667,
+      "recall_real": 0.8451443569553806,
+      "f1_macro": 0.6716567999351228,
+      "auc": 0.7868556430446195,
+      "eer": 0.3055433070866142,
+      "limiar_eer": 0.1708984375
+    },
+    "limiar_operacao": {
+      "limiar": 0.57275390625,
+      "criterio": "eer_validacao"
+    },
+    "Teste cego (áudios do grupo)": {
+      "falsos_detectados": "13/16",
+      "reais_corretos": "9/9",
+      "inconclusivos": 0,
+      "limiar": 0.573
+    },
+    "Teste de formato": {
+      "arquivo": "WhatsApp Audio 2026-10-15 at 11.46.07.mpeg",
+      "diferenca_max_p_fake": 0.001,
+      "p_fake_wav": 0.00447845458984375,
+      "p_fake_mp3": 0.004302978515625,
+      "p_fake_ogg": 0.00472259521484375
+    }
+  },
+  "tempos": {
+    "train_coleta_s": 2818.4,
+    "train_caracteristicas_s": 4.3,
+    "validation_coleta_s": 1254.9,
+    "validation_caracteristicas_s": 0.5,
+    "test_coleta_s": 1128.2,
+    "test_caracteristicas_s": 1.2,
+    "generalizacao_coleta_s": 127.1,
+    "generalizacao_caracteristicas_s": 0.5,
+    "in_the_wild_coleta_s": 881.5,
+    "in_the_wild_caracteristicas_s": 6.6,
+    "treino_s0_epocas": 80,
+    "treino_s0_total_s": 1109.1,
+    "treino_s0_s_por_epoca": [
+      70.6
+    ],
+    "treino_s1_epocas": 80,
+    "treino_s1_total_s": 1079.9
+  }
+}

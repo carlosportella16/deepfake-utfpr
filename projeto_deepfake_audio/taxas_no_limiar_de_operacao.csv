@@ -1,0 +1,7 @@
+conjunto,limiar,reais marcados FALSO (FPR),falsos detectados (recall)
+Teste limpo,0.50,0.012,0.96
+Teste limpo,operação 0.47,0.015,0.965
+Teste degradado,0.50,0.032,0.925
+Teste degradado,operação 0.47,0.038,0.928
+Generalização,0.50,0.005,0.93
+Generalização,operação 0.47,0.005,0.935

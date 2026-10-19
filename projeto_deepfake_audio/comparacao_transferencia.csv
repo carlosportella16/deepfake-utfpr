@@ -1,0 +1,3 @@
+modelo,eer_limpo,eer_degradado,eer_generalizacao
+CNN do zero,0.0288,0.0538,0.03
+CNN14 (PANNs) congelada,0.0987,0.2037,0.1425

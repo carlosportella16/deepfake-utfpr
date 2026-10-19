@@ -1,0 +1,4 @@
+versoes,mixup,s_por_epoca,eer_limpo,eer_degradado,eer_generalizacao
+1,False,30.0,0.0688,0.175,0.1725
+3,False,29.8,0.0537,0.1638,0.185
+3,True,30.5,0.065,0.1775,0.1625

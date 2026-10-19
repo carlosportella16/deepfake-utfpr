@@ -1,0 +1,8 @@
+fonte real,n,FPR limpo @op,FPR degradado @op,P(fake) média
+real:youtube_en,150,0.02,0.047,0.052
+real_commonvoice,26,0.038,0.038,0.061
+real_coraa,160,0.0,0.019,0.02
+real_cv_de,16,0.062,0.062,0.061
+real_cv_es,16,0.0,0.0,0.019
+real_cv_fr,16,0.062,0.125,0.055
+real_cv_it,16,0.0,0.062,0.013

@@ -1,0 +1,3 @@
+caracteristica,entrada,s_por_epoca,auc_teste_degradado,eer_teste_degradado
+lfcc,60x301,15.5,0.6996,0.3412
+mel,128x301,51.9,0.7652,0.2937
