@@ -1,0 +1,45 @@
+# Python
+.venv/
+.venv312/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Sistema e editores
+.DS_Store
+.vscode/
+.idea/
+
+# Ferramentas de desenvolvimento assistido (planejamento e comandos locais)
+.claude/
+openspec/
+
+# Material só da entrega acadêmica (Moodle e apresentação)
+ENTREGA.md
+documentacao/roteiro_apresentacao.md
+documentacao/colab/*.ipynb
+
+# Dados, caches, pesos e modelos: gerados ou baixados pelo código (~5 GB).
+# Ficam só os resultados finais citados no README e no artigo.
+projeto_deepfake_audio/*
+!projeto_deepfake_audio/resultados.json
+!projeto_deepfake_audio/*.csv
+
+# Áudios do grupo (teste cego): não são redistribuídos, nem os nomes dos arquivos
+projeto_deepfake_audio/teste_cego.csv
+fake/
+original/
+meus_audios/
+
+# Artefatos de LaTeX, caso o artigo seja compilado localmente
+documentacao/*.aux
+documentacao/*.bbl
+documentacao/*.blg
+documentacao/*.log
+documentacao/*.out
+documentacao/*.pdf
+documentacao/refs.bib
+
+# Segredos
+.env
+*.token
